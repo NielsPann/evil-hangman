@@ -1,5 +1,5 @@
 # evil-hangman
-Evil hangman for android. Guess the word while the app tries to avoid your the words you think of!
+Evil hangman for android. Guess the word while the app tries to avoid the words you think of!
 
 features
 --------
