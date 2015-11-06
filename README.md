@@ -12,5 +12,6 @@ features
 
 UX
 --
-<img src="http://i.imgur.com/JPagC9z.jpg" alt="User Interface" height="500" width="275">
-<span><img src="http://i.imgur.com/6ReNlVs.jpg" alt="User Interface" height="500" width="275"></span>
+<img src="http://i.imgur.com/yZFbYLk.jpg" alt="User Interface" height="500" width="275">
+<span><img src="http://i.imgur.com/zPyIO92.jpg" alt="User Interface" height="500" width="275"></span>
+<span><img src="http://i.imgur.com/zooxeN2.jpg" alt="User Interface" height="500" width="275"></span>
