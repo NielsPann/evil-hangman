@@ -13,4 +13,11 @@ Class diagram
 
 API's and Frameworks
 --------------------
+At the moment of writing no external frameworks are choosen to use while creating this project.
 
+The project will use code profided by the android API.
+- FileOutputStream
+- FileInputStream
+- Android menus
+- sharedPreferences
+- Android defaultValue 
