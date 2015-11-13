@@ -7,6 +7,7 @@ features
 - User defined word length
 - User defined maximum guesses
 - highscore list
+- Score is calculated on the type of letter you guess right E = 1 point Q = 4 points.
 - in- app keyboard
 - onscreen representation of your hangman!
 
