@@ -24,5 +24,5 @@ updates
 **update2:** HighScore screen will be a screen on its own, and not as a pop-up.
 >13-11-2015
 
-<span><img src="http://i.imgur.com/Jgk2VhQ.png" alt="User settings" height="30%" width="30%"></span>
-<span><img src="http://i.imgur.com/4vRPQqi.png" alt="High scores" height="30%" width="30%"></span>
+<span><img src="http://i.imgur.com/Jgk2VhQ.png" alt="User settings" height="500" width="275"></span>
+<span><img src="http://i.imgur.com/4vRPQqi.png" alt="High scores" height="500" width="275"></span>
