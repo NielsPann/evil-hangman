@@ -20,7 +20,7 @@ updates
 -------
 >13-11-2015
 
-**update1:** Top right menu item will only have options to go to seperate settings screen and HighScore screen.
+**update1:** Top right menu item will only have two options, to go to seperate settings screen and HighScore screen.
 
 **update2:** HighScore screen will be a screen on its own, and not as a pop-up.
 
