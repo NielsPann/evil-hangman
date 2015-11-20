@@ -28,3 +28,15 @@ updates
 
 <span><img src="http://i.imgur.com/Jgk2VhQ.png" alt="User settings" height="500" width="275"></span>
 <span><img src="http://i.imgur.com/4vRPQqi.png" alt="High scores" height="500" width="275"></span>
+
+>20-11-2015
+**update3:** 
+
+Released first version of the game. Game has a custom made keyboard that disables the keys you have already pressed. It also updates the visual hangman on every wrong guess and shows the letters of all the right guesses.
+
+**todo**
+* Remove custom made keyboard as it is not the intention of the assignment.
+* Add a win or lose screen
+* add the rest of the app (scoreboard, evilmode, options screen, etc)
+
+
