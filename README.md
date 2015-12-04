@@ -38,6 +38,8 @@ Released first version of the game. Game has a custom made keyboard that disable
 * Remove custom made keyboard as it is not the intention of the assignment.
 * Add a win or lose screen
 * add the rest of the app (scoreboard, evilmode, options screen, etc)
+* 
+
 
 >04-12-2015
 **update4:**
