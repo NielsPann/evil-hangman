@@ -40,7 +40,8 @@ Released first version of the game. Game has a custom made keyboard that disable
 * add the rest of the app (scoreboard, evilmode, options screen, etc)
 
 >04-12-2015
-**update4:** 
+**update4:**
+
 Released Beta version 1.1 of the full game. 
 * Custom keyboard has been replaced with android keyboard 
 * Added settings and high scores
