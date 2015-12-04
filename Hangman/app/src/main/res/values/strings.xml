@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Hangman</string>
-    <string name="GuessingWord">_______</string>
+    <string name="GuessingWord">____</string>
+    <string name="Word_Length_SettingText">word length</string>
+    <string name="SettingsHeaderText">Settings</string>
+    <string name="Guesses_settingsText">Guesses</string>
+    <string name="Evil_Game_SwitchSettings">Evil game</string>
+    <string name="Save_buttonSettings">Save Settings</string>
+    <string name="GuessesIndicatorText">Guesses</string>
+    <string name="guessesIndicatorText">10</string>
+    <string name="ScoreIndicatorText">0</string>
 </resources>
