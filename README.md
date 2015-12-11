@@ -62,3 +62,16 @@ Released Beta version 1.1 of the full game.
 * Aesthetic changes 
 * Get feedback from test users.
 * process user feedback
+
+
+>11-12-2015
+**update5:**
+
+Released final version of the game.
+* Added support for landscape mode.
+* Added better word list.
+* Improved the way certain values are handled.
+* Added extra comments and headers to the code.
+
+**This is the final version of the game, and the version that is handed in for grading.**
+It is possible that there will be extra updates, from now on these updates will only be done for fun.
