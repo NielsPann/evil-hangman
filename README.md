@@ -40,3 +40,25 @@ Released first version of the game. Game has a custom made keyboard that disable
 * add the rest of the app (scoreboard, evilmode, options screen, etc)
 
 
+
+>04-12-2015
+**update4:**
+
+Released Beta version 1.1 of the full game. 
+* Custom keyboard has been replaced with android keyboard 
+* Added settings and high scores
+* Added Evil mode
+* User can choose word length in settings menu
+* user can choose number of number of guesses in settings menu
+* User can change game mode in settings menu
+* On a win the user is asked to save the current score
+* On a loose the user is comforted
+* Number of remaining guesses is now displayed in game
+* Score is displayed in game
+* Already chosen letters are displayed in game
+
+**todo**
+* Make app respond better to landscape mode
+* Aesthetic changes 
+* Get feedback from test users.
+* process user feedback
