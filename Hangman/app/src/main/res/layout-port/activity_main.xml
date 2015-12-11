@@ -13,7 +13,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:id="@+id/letterInputField"
+        android:id="@+id/inputFieldEditText"
         android:textSize="1sp"
         android:inputType="textFilter"
         android:focusable="true"
@@ -25,8 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/GuessingWord"
-        android:id="@+id/wordResult"
+        android:text="@string/GuessingWordText"
+        android:id="@+id/wordResultTextView"
         android:textSize="40sp"
         android:letterSpacing="0.3"
         android:layout_alignParentTop="true"
@@ -35,63 +35,62 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/imageView"
+        android:id="@+id/gallowImageView"
         android:src="@drawable/state1"
-        android:contentDescription="Gallow"
-        android:layout_below="@+id/wordResult"
+        android:contentDescription="@string/gallowDescription"
+        android:layout_below="@+id/wordResultTextView"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/GuessesIndicatorText"
+        android:text="@string/guessesText"
         android:textSize="16sp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/guessesIndicatorText"
+        android:id="@+id/guessesIndicatorTextView"
         android:layout_marginTop="35dp"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView" />
+        android:layout_alignTop="@+id/gallowImageView"
+        android:layout_toEndOf="@+id/gallowImageView" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/guessesIndicatorText"
-        android:id="@+id/guessesNumberText"
-        android:layout_below="@+id/guessesIndicatorText"
-        android:layout_toEndOf="@+id/imageView"
+        android:text="@string/amountOfGuessesText"
+        android:id="@+id/amountOfGuessesTextView"
+        android:layout_below="@+id/guessesIndicatorTextView"
+        android:layout_toEndOf="@+id/gallowImageView"
         android:paddingLeft="20dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Score"
-        android:id="@+id/textView2"
+        android:text="@string/scoreText"
+        android:id="@+id/scoreTextView"
         android:textSize="16sp"
         android:layout_marginTop="28dp"
-        android:layout_below="@+id/guessesNumberText"
-        android:layout_alignStart="@+id/guessesIndicatorText"
+        android:layout_below="@+id/amountOfGuessesTextView"
+        android:layout_alignStart="@+id/guessesIndicatorTextView"
         android:paddingLeft="12dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/ScoreIndicatorText"
-        android:id="@+id/scoreValText"
-        android:layout_below="@+id/textView2"
-        android:layout_toEndOf="@+id/imageView"
+        android:text="@string/scoreIndicatorText"
+        android:id="@+id/scoreValTextView"
+        android:layout_below="@+id/scoreTextView"
+        android:layout_toEndOf="@+id/gallowImageView"
         android:paddingStart="20dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text=""
-        android:id="@+id/guessedLetters"
-        android:layout_below="@+id/imageView"
+        android:id="@+id/guessedLettersTextView"
+        android:layout_below="@+id/gallowImageView"
         android:layout_centerHorizontal="true"
         android:letterSpacing="0.1"/>
 

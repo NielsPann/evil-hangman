@@ -1,7 +1,10 @@
 package com.example.niels.hangman;
 
 /**
- * Created by Niels on 1-12-2015.
+ * Created by Niels Pannekeet 11035668 on 1-12-2015.
+ * Handles the score after a letter is correctly guessed.
+ * When letters are correctly guessed in adjacent order, a multiplier will give an extra point
+ * for every adjacent guessed letter.
  */
 public class Score extends MainActivity {
 

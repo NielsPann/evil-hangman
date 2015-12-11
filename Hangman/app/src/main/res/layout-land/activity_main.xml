@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:id="@+id/inputFieldEditText"
+        android:textSize="1sp"
+        android:inputType="textFilter"
+        android:focusable="true"
+        android:privateImeOptions="nm"
+        android:focusableInTouchMode="true"
+        android:imeOptions="flagNoExtractUi"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/GuessingWordText"
+        android:id="@+id/wordResultTextView"
+        android:textSize="40sp"
+        android:letterSpacing="0.3"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/gallowImageView" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/gallowImageView"
+        android:src="@drawable/state1"
+        android:contentDescription="@string/gallowDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guessesText"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/guessesIndicatorTextView"
+        android:layout_below="@+id/wordResultTextView"
+        android:layout_toEndOf="@+id/gallowImageView" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/amountOfGuessesText"
+        android:id="@+id/amountOfGuessesTextView"
+        android:layout_below="@+id/guessesIndicatorTextView"
+        android:layout_toEndOf="@+id/gallowImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/scoreText"
+        android:id="@+id/ScoreIndicator"
+        android:textSize="16sp"
+        android:paddingLeft="12dp"
+        android:layout_alignTop="@+id/guessesIndicatorTextView"
+        android:layout_toEndOf="@+id/guessesIndicatorTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/scoreIndicatorText"
+        android:id="@+id/scoreValTextView"
+        android:paddingStart="20dp"
+        android:layout_below="@+id/ScoreIndicator"
+        android:layout_alignEnd="@+id/ScoreIndicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/guessedLettersTextView"
+        android:layout_below="@+id/gallowImageView"
+        android:layout_centerHorizontal="true"
+        android:letterSpacing="0.1"/>
+
+</RelativeLayout>

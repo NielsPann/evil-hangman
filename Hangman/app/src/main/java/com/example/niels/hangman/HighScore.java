@@ -19,7 +19,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Created by Niels on 29-11-2015.
+ * Created by Niels Pannekeet 11035668 on 29-11-2015.
+ * Activity that shows past scores in a ListView.
+ * This activity also adds scores to the list trough writing them to a textfile on the device.
  */
 public class HighScore extends Activity {
 
@@ -33,12 +35,12 @@ public class HighScore extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.high_score_layout);
 
-        // get the called activity and set variables to current values.
+        // get the called activity and set variables to current values
         Intent calledActivity = getIntent();
         int scoreVal = calledActivity.getExtras().getInt("scoreVal");
         boolean Evilgame = calledActivity.getExtras().getBoolean("gameMode");
 
-        // set string to current game mode to display in new high score.
+        // set string to current game mode to display in new high score
         if(Evilgame) {
             GameMode = "Evil Mode";
         }
@@ -46,7 +48,7 @@ public class HighScore extends Activity {
             GameMode = "Good Mode";
         }
 
-        // initiate the listview, array, arrayAdapter, and read textfile for existing scores.
+        // initiate the listview, array, arrayAdapter, and read textfile for existing scores
         HighScoreListView = (ListView)findViewById(R.id.HighScoreListView);
         HighscoreListArray = new ArrayList<String>();
         ReadFile();
@@ -54,8 +56,8 @@ public class HighScore extends Activity {
                 HighscoreListArray);
         HighScoreListView.setAdapter(adapterItems);
 
-        // if score value of 0 is passed in intent, it got called from the menu.
-        // so only add a new score if the value is not 0 (called from win dialog).
+        // if score value of 0 is passed in intent, it got called from the menu
+        // so only add a new score if the value is not 0 (called from win dialog)
         if (scoreVal != 0) {
             String date = DateFormat.getDateInstance().format(new Date());
             HighscoreListArray.add(date + "       " + GameMode + "        " +
@@ -66,7 +68,9 @@ public class HighScore extends Activity {
         }
     }
 
-    // method to write a new score to the txt file.
+    /**
+     * Method to write a new score to the textfile.
+     */
     private void writeToFile() {
         File fileDir = getFilesDir();
         File HighScoreFile = new File(fileDir, "HighScores.txt");
@@ -77,39 +81,20 @@ public class HighScore extends Activity {
             e.printStackTrace();
         }
     }
-    // method to read the txt file.
+
+    /**
+     * Method to read the textfile.
+     */
     private void ReadFile() {
         File fileDir = getFilesDir();
         File HighScoreFile = new File(fileDir, "HighScores.txt");
 
         // sets the ListArray from Highscores.txt
-        // FileUtils is compiled with 'org.apache.commons:commons-io:1.3.2' see build.gradle app
+        // fileUtils is compiled with 'org.apache.commons:commons-io:1.3.2' see build.gradle app
         try {
             HighscoreListArray = new ArrayList<>(FileUtils.readLines(HighScoreFile));
         } catch (IOException e) {
             HighscoreListArray = new ArrayList<String>();
         }
-    }
-
-    // initiation for the menu, not working now, also not really necessarily.
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-        if (id == R.id.SettingsMenuOption) {
-            Intent GetSettingsIntent = new Intent(this, Settings.class);
-            startActivity(GetSettingsIntent);
-            return true;
-        }
-        else if (id == R.id.HighscoreMenuOption) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }

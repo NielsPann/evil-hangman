@@ -4,7 +4,6 @@
     android:orientation="vertical"
     android:gravity="center|top">
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/Word_Length_SettingText"
+            android:text="@string/WordLengthSettingText"
             android:id="@+id/textView"
             android:layout_gravity="center_horizontal"
             android:paddingTop="30dp"
@@ -37,9 +36,7 @@
             android:paddingLeft="5dp"
             android:paddingBottom="5dp"/>
 
-
     </LinearLayout>
-
 
     <SeekBar
         android:layout_width="250dp"
@@ -47,6 +44,7 @@
         android:id="@+id/wordLengthSlider"
         android:paddingBottom="30dp"
         android:max="20"/>
+
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -55,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/Guesses_settingsText"
+        android:text="@string/guessesSettingsText"
         android:id="@+id/guessesTextView"
         android:layout_gravity="center_horizontal"
         android:paddingBottom="5dp"/>
@@ -81,7 +79,7 @@
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Evil_Game_SwitchSettings"
+        android:text="@string/evilGameSwitchSettings"
         android:textSize="18sp"
         android:id="@+id/evilModeSwitch"
         android:layout_gravity="center_horizontal"
@@ -90,7 +88,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Save_buttonSettings"
+        android:text="@string/SaveButtonSettings"
         android:id="@+id/SaveButton"
         android:layout_gravity="center_horizontal"
         android:layout_margin="50dp"
