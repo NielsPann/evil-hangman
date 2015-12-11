@@ -74,4 +74,5 @@ Released final version of the game.
 * Added extra comments and headers to the code.
 
 **This is the final version of the game, and the version that is handed in for grading.**
+
 It is possible that there will be extra updates, from now on these updates will only be done for fun.
